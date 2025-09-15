@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Catálogo de Filmes</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>🎬 Catálogo de Filmes</h1>
     <div class="search-box">
-      <input type="text" id="searchInput" placeholder="Buscar filme...">
+      <input type="text" id="searchInput" placeholder="Buscar filme..." />
       <button id="searchButton">🔍</button>
       <button id="clearButton" title="Limpar busca">❌</button>
     </div>
   </header>
-  <main>
-    <section id="emCartaz"></section>
-    <section id="populares"></section>
-    <section id="avaliados"></section>
-    <section id="novidades"></section>
+
+  <main id="main-content">
+    <section>
+      <h2 class="categoria-titulo">Filmes em Cartaz</h2>
+      <div class="movies-row" id="emCartaz"></div>
+    </section>
+    <section>
+      <h2 class="categoria-titulo">Filmes Populares</h2>
+      <div class="movies-row" id="populares"></div>
+    </section>
+    <section>
+      <h2 class="categoria-titulo">Mais Bem Avaliados</h2>
+      <div class="movies-row" id="avaliados"></div>
+    </section>
+    <section>
+      <h2 class="categoria-titulo">Novidades</h2>
+      <div class="movies-row" id="novidades"></div>
+    </section>
     <section id="resultadoPesquisa"></section>
   </main>
-  <button id="scrollTopButton" title="Voltar ao topo" style="display:none;position:fixed;bottom:30px;right:30px;z-index:1001;font-size:30px;">↑</button>
 
-  <!-- Modal pelos scripts -->
+  <!-- Modal para detalhes filme -->
+  <div id="modalOverlay" class="modal-overlay"></div>
+  <div id="detailsModal" class="details-modal" tabindex="0"></div>
+
+  <button id="scrollTopButton" title="Voltar ao topo" style="display:none;">
+    ↑
+  </button>
+
+  <footer>
+    <p>Desenvolvido por Bruno Alves | Infinity School</p>
+  </footer>
+
+  <script src="base.js"></script>
 </body>
-<footer>
-  <p>Desenvolvido por Bruno Alves | Infinity School</p>
-</footer>
-<script src="base.js"></script>
 </html>
