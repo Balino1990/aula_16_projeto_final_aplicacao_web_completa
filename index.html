@@ -11,34 +11,23 @@
     <h1>🎬 Catálogo de Filmes</h1>
     <div class="search-box">
       <input type="text" id="searchInput" placeholder="Buscar filme...">
-      <button id="searchBtn">🔍</button>
+      <button id="searchButton">🔍</button>
+      <button id="clearButton" title="Limpar busca">❌</button>
     </div>
   </header>
-
   <main>
-    <section id="moviesSection" class="movies-grid">
-    </section>
+    <section id="emCartaz"></section>
+    <section id="populares"></section>
+    <section id="avaliados"></section>
+    <section id="novidades"></section>
+    <section id="resultadoPesquisa"></section>
   </main>
+  <button id="scrollTopButton" title="Voltar ao topo" style="display:none;position:fixed;bottom:30px;right:30px;z-index:1001;font-size:30px;">↑</button>
 
-  <div id="movieModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <div class="modal-header">
-        <img id="modalPoster" src="" alt="Poster do filme">
-        <div class="modal-info">
-          <h2 id="modalTitle"></h2>
-          <p id="modalOverview"></p>
-          <p><b>Data de lançamento:</b> <span id="modalRelease"></span></p>
-          <p><b>Nota:</b> ⭐ <span id="modalRating"></span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <p>Desenvolvido por Bruno Alves | Infinity School</p>
-  </footer>
-
-  <script src="script.js"></script>
+  <!-- Modal pelos scripts -->
 </body>
+<footer>
+  <p>Desenvolvido por Bruno Alves | Infinity School</p>
+</footer>
+<script src="base.js"></script>
 </html>
