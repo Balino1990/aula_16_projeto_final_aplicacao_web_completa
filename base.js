@@ -12,8 +12,8 @@ const novidadesContainer = document.getElementById("novidades");
 const resultadoPesquisaContainer = document.getElementById("resultadoPesquisa");
 
 // Constantes da API
-const API_KEY = "3e074b6d14a7158d77bae02b97da066e";
-const BASE_URL = "https://api.themoviedb.org/3";
+const API_KEY = "77c4e2b070a2e1396500d0b42ebf7cec";
+const BASE_URL = "https://api.themoviedb.org/3"; // 
 const IMG_URL = "https://image.tmdb.org/t/p/w500";
 
 // Variáveis globais
